@@ -1,11 +1,9 @@
 package com.thenewcircle.glassdemocardclass;
 
-import com.google.android.glass.app.Card;
-
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+
+import com.google.android.glass.app.Card;
 
 public class MainActivity extends Activity {
 
@@ -14,6 +12,7 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
     	final Card card = new Card(this);
     	card.setText("Hello World!");
+    	card.addImage(R.drawable.ic_launcher);
     	setContentView(card.getView()); 
 	}
 }
